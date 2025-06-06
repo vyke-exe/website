@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'saiba'; /*a name to be used later*/
+    src: url('/fonts/SAIBA-45.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'bytalion'; /*a name to be used later*/
+    src: url('/fonts/Bytalion.ttf'); /*URL to font*/
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  position: relative;
+  max-width: 100em;
+  text-align: center;
+  border-width: 5px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  display: inline;
+  color: black;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: 2.0rem bytalion;
+  font-style: bold;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+   color: #8E7AB5;
+}
+
+body {
+  font: 1.3rem Inconsolata, monospace;
+  max-width: 100em;
+  margin: 0em auto;
+  background: #8E7AB5;
+  height: 100vh;
+  background-image: url(/img/bigclouds.png), url(/img/clouds.png);;
+  background-repeat: repeat-x, repeat-x;
+  background-position: top, bottom;
+  /*background: #f2f2f2;*/
+}
+
+h1 {
+	font-family: bytalion;
+	font-size: 72px;
+	font-style: italic;
+	color: black;
+	width: 100%;
+	animation: crtflicker 5s infinite;
+}
+
+h2 {
+	font-family: bytalion;
+	font-size: 32px;
+	font-style: italic;
+	color: black;
+	width: 100%;
+	animation: crtflicker 5s infinite;
+}
+
+.avatar {
+	text-align: center;
+	margin: 2em auto;
+	
+}
+
+.avatar > img {
+	border: 10px solid; 
+	border-width: 5px;
+	margin: 0 5em;
+  border-style: solid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.doggycenter {
+	text-align: center;
+	margin: 2em auto;
+	
+}
+
+.doggycenter > img {
+	margin: 0 5em;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.post {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  color: black;
+  margin: 0em 0em;
+  border-width: 5px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  text-shadow: 1px 0 1px rgba(0,30,255,0.2), -1px 0 1px rgba(255,0,80,0.2), 0 0 0px;
+}
+
+.centeredpost {
+  padding-left: 2em;
+  padding-right: 2em;
+  color: black;
+  margin: 0em 0em;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25px;
+  text-shadow: 1px 0 1px rgba(0,30,255,0.5), -1px 0 1px rgba(255,0,80,0.3), 0 0 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
+div.gallery {
+  padding: 2em;
+  padding-bottom: 4em;
+  color: black;
+  margin: 0em 0em;
+  border-radius: 25px;
+  text-shadow: 1px 0 1px rgba(0,30,255,0.5), -1px 0 1px rgba(255,0,80,0.3), 0 0 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 5px;
+  border: 5px solid black;
+  float: left;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+div.gallery:hover {
+  border: 5px solid purple;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+@keyframes crtflicker {
+  0% {
+  opacity: 0.87861;
+  }
+  2% {
+  opacity: 0.34769;
+  }
+  4% {
+  opacity: 0.23604;
+  }
+  6% {
+  opacity: 0.90626;
+  }
+  8% {
+  opacity: 0.68128;
+  }
+  10% {
+  opacity: 0.83891;
+  }
+  15% {
+  opacity: 1.0;
+  }
+  58%{
+  opacity: 1.0;
+  }
+  60% {
+  opacity: 0.34769;
+  }
+  62% {
+  opacity: 0.23604;
+  }
+  74% {
+  opacity: 1.0;
+  }
+  100% {
+  opacity: 1.0;
+  }
+}
