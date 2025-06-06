@@ -6,6 +6,7 @@ const site = lume({
 });
 
 site.add("/style.css");
+site.add("/gallery_styles.css);
 site.add("/img");
 site.add("/gallery");
 site.add("/fonts");
