@@ -19,6 +19,8 @@ permissions:
 
 jobs:
   test:
+    env:
+      DENO_FUTURE: 1
     runs-on: ubuntu-latest
 
     steps:
