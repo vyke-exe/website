@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'saiba'; /*a name to be used later*/
-    src: url('/fonts/SAIBA-45.ttf'); /*URL to font*/
+    src: url('fonts/SAIBA-45.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'bytalion'; /*a name to be used later*/
-    src: url('/fonts/Bytalion.ttf'); /*URL to font*/
+    src: url('fonts/Bytalion.ttf'); /*URL to font*/
 }
 
 /* The navigation bar */
@@ -43,7 +43,7 @@ body {
   margin: 0em auto;
   background: #8E7AB5;
   height: 100vh;
-  background-image: url(/img/bigclouds.png), url(/img/clouds.png);
+  background-image: url(img/bigclouds.png), url(img/clouds.png);
   background-repeat: repeat-x, repeat-x;
   background-position: top, bottom;
   background-attachment: fixed;
