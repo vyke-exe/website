@@ -50,6 +50,18 @@ body {
   /*background: #f2f2f2;*/
 }
 
+.gallerybody {
+  font: 1.3rem Inconsolata, monospace;
+  max-width: 100em;
+  margin: 0em auto;
+  background: #8E7AB5;
+  height: 100vh;
+  background-image: url(/img/bigclouds.png), url(/img/clouds.png);;
+  background-repeat: repeat-x, repeat-x;
+  background-position: top, bottom;
+  /*background: #f2f2f2;*/
+}
+
 h1 {
 	font-family: bytalion;
 	font-size: 72px;
