@@ -9,4 +9,6 @@ site.add("/gallery");
 site.add("/fonts");
 site.add("/buttons");
 
+site.use(basePath());
+
 export default site;
