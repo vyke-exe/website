@@ -5,8 +5,7 @@ const site = lume({
 	location: new URL("https://vyke-exe.github.io/epsi-website/")
 });
 
-site.add("/styles.css");
-site.add("/gallery_styles.css");
+site.add("/style.css");
 site.add("/img");
 site.add("/gallery");
 site.add("/fonts");
