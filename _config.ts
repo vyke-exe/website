@@ -1,9 +1,6 @@
 import lume from "lume/mod.ts";
-import basePath from "lume/plugins/base_path.ts";
 
-const site = lume({
-	location: new URL("https://vyke-exe.github.io/epsi-website/")
-});
+const site = lume();
 
 site.add("/style.css");
 site.add("/gallery_styles.css");
