@@ -8,5 +8,6 @@ site.add("/img");
 site.add("/gallery");
 site.add("/fonts");
 site.add("/buttons");
+site.add("/gallery-thumbnails");
 
 export default site;

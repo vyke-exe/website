@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'saiba'; /*a name to be used later*/
-    src: url('./fonts/SAIBA-45.ttf'); /*URL to font*/
+    src: url('fonts/SAIBA-45.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'bytalion'; /*a name to be used later*/
-    src: url('./fonts/Bytalion.ttf'); /*URL to font*/
+    src: url('fonts/Bytalion.ttf'); /*URL to font*/
 }
 
 /* The navigation bar */
@@ -43,10 +43,22 @@ body {
   margin: 0em auto;
   background: #8E7AB5;
   height: 100vh;
-  background-image: url(./img/bigclouds.png), url(./img/clouds.png);
+  background-image: url(img/bigclouds.png), url(img/clouds.png);
   background-repeat: repeat-x, repeat-x;
   background-position: top, bottom;
   background-attachment: fixed;
+  /*background: #f2f2f2;*/
+}
+
+.gallerybody {
+  font: 1.3rem Inconsolata, monospace;
+  max-width: 100em;
+  margin: 0em auto;
+  background: #8E7AB5;
+  height: 100vh;
+  background-image: url(/img/bigclouds.png), url(/img/clouds.png);;
+  background-repeat: repeat-x, repeat-x;
+  background-position: top, bottom;
   /*background: #f2f2f2;*/
 }
 
@@ -121,6 +133,38 @@ h2 {
   border-radius: 25px;
   text-shadow: 1px 0 1px rgba(0,30,255,0.5), -1px 0 1px rgba(255,0,80,0.3), 0 0 0px;
   background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
+div.gallery {
+  padding: 2em;
+  padding-bottom: 4em;
+  color: black;
+  margin: 0em 0em;
+  border-radius: 25px;
+  text-shadow: 1px 0 1px rgba(0,30,255,0.5), -1px 0 1px rgba(255,0,80,0.3), 0 0 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 5px;
+  border: 5px solid black;
+  float: left;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+div.gallery:hover {
+  border: 5px solid purple;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
+div.desc {
+  padding: 5px;
   text-align: center;
 }
 

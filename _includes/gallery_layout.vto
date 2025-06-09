@@ -1,29 +1,95 @@
 ---
 artworks:
-  - thumbnail: /gallery/boba_tea_wolf_avatar.gif
+  - thumbnail: /gallery-thumbnails/wolfbeer.gif
+    url: /gallery/wolfbeer.gif
+    description: |
+      wolf drinking beer surrounded by coffee, guitar and music, maple leaves, and the moon
+    blurb: |
+      My current fediverse avatar. Aspects incluide beer, 
+  - thumbnail: /gallery-thumbnails/boba_tea_wolf_avatar_thumbnail.gif
     url: /gallery/boba_tea_wolf_avatar.gif
     description: |
       boba tea blob cat
-  - thumbnail: /gallery/ho-oleyak_noodles.gif
+    blurb: |
+      People on fediverse keep making jokes about sipping me (Epsi sounds like pepsi) so I made a blobcat in a boba tea cup as a joke too...	
+  - thumbnail: /gallery-thumbnails/ho-oleyak_noodles_thumbnail.gif
     url: /gallery/ho-oleyak_noodles.gif
     description: |
       Ho'olheyak from arknights eating noodles
-  - thumbnail: /gallery/klukai_416_2025.png
+    blurb: |
+      Artist named ササチワ (@sasatiwa.bsky.social, @kktrossa‬) started a trend of Ho'olheyak from Arknights eating noodles and it was cute so I joined in!
+  - thumbnail: /gallery-thumbnails/mezzo_wan_wan_thumbnail.gif
+    url: /gallery/mezzo_wan_wan_fediverse.mp4
+    description: |
+      Girl with black hair and greenhoodie with dog ears and paws saying "wan wan"
+    blurb: |
+      Cute animation I did when my streamer friend said "wan wan" on stream.
+  - thumbnail: /gallery-thumbnails/klukai_416_2025_thumbnail.png
     url: /gallery/klukai_416_2025.png
     description: |
       Pixel Art I made of Klukai for 416 Day 2025.
-  - thumbnail: /gallery/mechagirl_banner_00.gif
+    blurb: |
+      4/16 is HK416 day, for a character from Girls Frontline, so I made this in 2025!
+  - thumbnail: /gallery-thumbnails/mechagirl_banner_00_thumbnail.gif
     url: /gallery/mechagirl_banner_00.gif
     description: |
       Mecha girl in space banner.
-  - thumbnail: /gallery/mechagirl_in_flight.gif
+    blurb: |
+      Inspired by Miku, I made a similar looking mecha girl in space as a fediverse banner.
+  - thumbnail: /gallery-thumbnails/mechagirl_in_flight_thumbnail.gif
     url: /gallery/mechagirl_in_flight.gif
     description: |
       Mecha girl in flight space banner.
-  - thumbnail: /gallery/pleroma_tan_birthday.gif
+    blurb: |
+      Another banner, this one with a small mecha girl flying through space.
+  - thumbnail: /gallery-thumbnails/pleroma_tan_birthday_thumbnail.gif
     url: /gallery/pleroma_tan_birthday.gif
     description: |
-      Pleroma-tan animation I made on Pleroma-tan's birthday, 2023.
+      Pleroma-tan animation I made on Pleroma-tans birthday, 2023.
+    blurb: |
+      Made for Pleroma-tan's birthday in 2023. Pleroma-tan is the mascot for the pleroma fediverse software.
+  - thumbnail: /gallery-thumbnails/lil_mew_mew_01_thumbnail.gif
+    url: /gallery/lil_mew_mew_01.gif
+    description: |
+      Pixel catgirl in a coffee mug.
+    blurb: |
+      Cat girl in a mug! I was just inspired to make this one day. 
+  - thumbnail: /gallery-thumbnails/memegirl_001_thumbnail.gif
+    url: /gallery/memegirl_001_twitter.gif
+    description: |
+      Girl with glasses on a computer saying "hehe memes"
+    blurb: |
+      He he he~ memes...
+  - thumbnail: /gallery-thumbnails/norm_oc_attempt_thumbnail.gif
+    url: /gallery/norm_oc_attempt.gif
+    description: |
+      Brown haired girl with twintails in a magical girl outfit with a router
+    blurb: |
+      A mock OC for one of my fediverse admins. Since they're always doing infrastructure stuff all the time, I imagined them as a nerdy magical girl.
+  - thumbnail: /gallery-thumbnails/miaourt_avatarv2.gif
+    url: /gallery/miaourt_avatarv2.gif
+    description: |
+      Cat in a yogurt container
+    blurb: |
+      Avatar I was requested to do for a fediverse admin. Was really fun. RIP niu.moe!
+  - thumbnail: /gallery-thumbnails/portrait_practice_001_thumbnail.gif
+    url: /gallery/portrait_practice_001_twitter.gif
+    description: |
+      Pixel girl with cat filter and holding up peace sign.
+    blurb: |
+      Avatar practice I did a while ago.
+  - thumbnail: /gallery-thumbnails/ente_duck_thumbnail.gif
+    url: /gallery/ente_duck.gif
+    description: |
+      Duck in a pond
+    blurb: |
+      Duck I was requested to do by a friend on the fediverse.
+  - thumbnail: /gallery-thumbnails/come_by_the_fire_thumbnail.gif
+    url: /gallery/come_by_the_fire.gif
+    description: |
+      Duck in a pond
+    blurb: |
+      Comfy fireside pixel art, featuring me!
 ---
 
 <!DOCTYPE html>
@@ -44,7 +110,10 @@ artworks:
 	<a href="/blog">Blog</a>
 	<a href="/gallery">Gallery</a>
 	</div>
-	
+	<br>
+	<div class="centeredpost">
+		{{ content }}
+	</div>
 	<br>
 
 <!-- GALLERY BEGIN -->
@@ -52,9 +121,9 @@ artworks:
 
 <div class="gallery">
   <a target="_blank" href="{{ artwork.url }}">
-    <img src="{{ artwork.url }}" alt="{{ artwork.description }}">
+    <img src="{{ artwork.thumbnail }}" alt="{{ artwork.description }}" style="image-rendering: pixelated;">
   </a>
-  <div class="desc">{{ artwork.description }}</div>
+  <div class="desc">{{ artwork.blurb }}</div>
 </div>
 {{ /for }}
 <!-- GALLERY END -->
